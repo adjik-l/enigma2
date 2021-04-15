@@ -242,6 +242,7 @@ if test x"$with_amlogic" = xyes ; then
 	PKG_CHECK_MODULES(AMCODEC, libamcodec)
 	PKG_CHECK_MODULES(AMADEC, libamadec)
 	PKG_CHECK_MODULES(DVBCSA, libdvbcsa)
+	ALSA_CFLAGS="-lasound"
 fi
 
 AC_CHECK_HEADERS([sys/klog.h])
